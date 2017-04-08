@@ -1,0 +1,15 @@
+Package: MACAU2
+Type: Package
+Title: MACAU 2.0: Efficient Mixed Model Analysis of Count Data 
+Version: 1.10
+Date: 2017-03-31
+Author: Shiquan Sun, Jiaqiang Zhu, Xiang Zhou
+Maintainer: Shiquan Sun <shiquans@umich.edu>
+Description: MACAU2 is an R package designed for generalized linear mixed model inference in genomic sequencing studies.
+Depends: R (>= 3.0.1),spam,gtools,Matrix,INLA
+License: GPL-3
+Copyright: See COPYRIGHTS for details
+Imports: Rcpp (>= 0.11.6),foreach,doParallel,parallel
+LinkingTo: Rcpp, RcppArmadillo,foreach,doParallel,parallel
+NeedsCompilation: yes
+

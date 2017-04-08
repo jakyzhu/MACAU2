@@ -1,0 +1,12 @@
+useDynLib(MACAU2)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+
+import(INLA)
+import(spam)
+import(gtools)
+import(Matrix)
+import(parallel)
+import(foreach)
+import(doParallel)
+
