@@ -12,8 +12,9 @@ macau2 <- function( RawCountDataSet, Phenotypes, Covariates=NULL, RelatednessMat
 				  filtering=TRUE, verbose=FALSE, ...) {
 	if(numCore > 1){
 		if(numCore>detectCores()){warning("MACAU2:: the number of cores you're setting is larger than detected cores!");numCore = detectCores()}
-		registerDoParallel(cores=numCore)
 	}
+	registerDoParallel(cores=numCore)
+	
 	# filtering counts
 	if (filtering & fit.model == "PMM"){
 	unfilterIdx <- apply( RawCountDataSet, 1, function(x) length(x[x>5])>=2 )
